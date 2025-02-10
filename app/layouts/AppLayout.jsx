@@ -1,10 +1,11 @@
 "use client"
 
-import { Nav, Footer } from '../components';
+import { Nav, Footer } from '../assets/components';
 import { useEffect, useState } from 'react';
 export default function AppLayout({children}) {
 
-    const [prevScroll, setPreScroll] = useState(window.pageYOffset);
+    
+    const [prevScroll, setPreScroll] = useState( typeof windiow != "undefined" ? window.pageYOffset : "");
     const [navShow, setNavShow] = useState(true);
 
     const handelScroll = () => {
