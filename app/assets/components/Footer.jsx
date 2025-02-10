@@ -5,9 +5,9 @@
                 <h1 className='mb-1 text-3xl font-bold text-green-900'>PERFECT SECURITY SERVICE &#750;</h1>
                 <div className='grid grid-cols-2 gap-2 '>
                     <div>
-                        <p className="w-3/4 text-lg mb-7">is a private security services company. It is form with experts full of security experience and it provide security services nationwide in Myanmar.</p>
+                        <p className="w-3/4 mb-7">is a private security services company. It is form with experts full of security experience and it provide security services nationwide in Myanmar.</p>
                     </div>
-                    <div className='grid grid-cols-2 gap-8 text-lg font-semibold'>
+                    <div className='grid grid-cols-2 gap-8 font-semibold'>
                         <div>
                             <h1 className='text-lg font-bold '>Download Links</h1>
                             <div className=' ps-7'>

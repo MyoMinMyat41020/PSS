@@ -1,0 +1,1 @@
+export { default as Content_form } from "./Content_form"

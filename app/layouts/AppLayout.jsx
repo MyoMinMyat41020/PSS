@@ -38,7 +38,9 @@ export default function AppLayout({children}) {
                 </div>
             </main>
             <footer className=''>
-                <Footer/>
+                <div className=''>
+                    <Footer/>
+                </div>
             </footer>
         </>
     )
