@@ -1,4 +1,12 @@
- export default function Footer() {
+"use client"
+
+import Link from "next/link"
+import { usePathname } from "next/navigation"
+
+export default function Footer() {
+
+    const pathname = usePathname();
+    
     return (
         <div className='text-white bg-green-500'>
             <div className='container flex flex-col gap-[2rem] mx-auto py-[3rem]'>
@@ -24,19 +32,16 @@
                             <div>
                                 <ul className="items-center justify-center gap-4 ps-4">
                                     <li>
-                                        <a href="" className="text-green-700 ">Home</a>
+                                        <Link href="/" className={`${ pathname == "/" ? " text-green-700 " : "hover:text-green-700"}`}>Home</Link>
                                     </li>
                                     <li>
-                                    <a href="" className=" hover:text-green-700">Our Services</a>
+                                        <Link href="/pssservices" className={`${ pathname == "/pssservices" ? " text-green-700 " : "hover:text-green-700"}`}>Our Services</Link>
                                     </li>
                                     <li>
-                                    <a href="" className=" hover:text-green-700">Our Projects</a>
+                                        <Link href="/project" className={`${ pathname == "/project" ? " text-green-700 " : "hover:text-green-700"}`}>Our Projects</Link>
                                     </li>
                                     <li>
-                                    <a href="" className=" hover:text-green-700">Gallery</a>
-                                    </li>
-                                    <li>
-                                    <a href="" className=" hover:text-green-700">Contact Us</a>
+                                        <Link href="/gallery" className={`${ pathname == "/gallery" ? " text-green-700 " : "hover:text-green-700"}`}>Gallery</Link>
                                     </li>
                                 </ul> 
                             </div>
